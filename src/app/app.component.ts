@@ -15,12 +15,12 @@ export class AppComponent implements AfterViewInit {
       console.log('Yes! Yes!');
     }
     const graph = new mx.mxGraph(this.mxgraphEl.nativeElement);
-    // const model = graph.getModel();
-    // model.beginUpdate();
-    // try {
-    //   graph.insertVertex(graph.getDefaultParent(), '', 'TEST', 0, 0, 100, 100);
-    // } finally {
-    //   model.endUpdate();
-    // }
+    const model = graph.getModel();
+    model.beginUpdate();
+    try {
+      graph.insertVertex(graph.getDefaultParent(), '', 'TEST', 0, 0, 100, 100);
+    } finally {
+      model.endUpdate();
+    }
   }
 }
