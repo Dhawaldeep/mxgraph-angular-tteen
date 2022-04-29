@@ -6,9 +6,9 @@ declare global {
   }
 }
 
-window['mxBasePath'] = 'assets/mxgraph';
+window['mxBasePath'] = '../../assets/mxgraph';
 
 export default factory({
   // not working see https://github.com/jgraph/mxgraph/issues/479
-  mxBasePath: '',
+  mxBasePath: '../../assets/mxgraph',
 });
